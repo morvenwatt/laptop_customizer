@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import CartTotal from '../CartTotal/CartTotal'
 
 
-
-
 class Cart extends Component {
     render() {
         const summary = Object.keys(this.state.selected).map((feature, idx) => {
@@ -18,10 +16,12 @@ class Cart extends Component {
                             {USCurrencyFormat.format(selectedOption.cost)}
                         </div>
                     </div>
-                   <CartTotal summary={summary}/>
-                </div>
-            );}   
-        }
+                   <CartTotal />
+        </div> );
+        });
     }
+})
+
+       
 
 export default Cart;

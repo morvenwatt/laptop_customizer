@@ -54,7 +54,7 @@ class App extends Component {
           </form>
           <section className="main__summary">
             <h2>Your cart</h2>
-         
+          
           </section>
         </main>
       </div>
