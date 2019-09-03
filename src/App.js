@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import List from './List/List';
 import Header from './Header/Header';
-import Cart from './Cart/Cart';
-
-
-
+//import Cart from './Cart/Cart';
 import './App.css';
+
 
  
 //(MW) State must live in main App component as it is needed by both the list component and the cart component.
@@ -50,11 +48,13 @@ class App extends Component {
         <main>
           <form className="main__form">
             <h2>Customize your laptop</h2>
-            <List />
+            <List 
+            features={this.props.features}
+            selected={this.state.selected}/>
           </form>
           <section className="main__summary">
             <h2>Your cart</h2>
-            <Cart />
+         
           </section>
         </main>
       </div>
