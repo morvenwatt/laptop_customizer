@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import CartTotal from '../CartTotal/CartTotal'
 
+//Do I need to import the List Section? It cannot read state of undefined as it cannot see what is selected?
+//But state is in main APP component so that can't be right? 
+
 const USCurrencyFormat = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD'

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import List from './List/List';
 import Header from './Header/Header';
-//import Cart from './Cart/Cart';
+import Cart from './Cart/Cart';
 import './App.css';
 
 
@@ -54,7 +54,7 @@ class App extends Component {
           </form>
           <section className="main__summary">
             <h2>Your cart</h2>
-          
+          <Cart />
           </section>
         </main>
       </div>
