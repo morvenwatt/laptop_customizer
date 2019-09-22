@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import List from './List/List';
 import Header from './Header/Header';
 import Cart from './Cart/Cart';
+//import CartTotal from './CartTotal/CartTotal';
 import './App.css';
 
 
@@ -55,8 +56,13 @@ class App extends Component {
           </form>
           <section className="main__summary">
             <h2>Your cart</h2>
-          <Cart />
+          <Cart 
+          summary={this.props.summary}
+          selected={this.state.selected}
+          />
+         
           </section>
+          
         </main>
       </div>
     );

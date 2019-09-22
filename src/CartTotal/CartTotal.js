@@ -14,8 +14,8 @@ const USCurrencyFormat = new Intl.NumberFormat('en-US', {
 
 class CartTotal extends Component {
     render () {
-        const total = Object.keys(this.props.selected).reduce(
-            (acc, curr) => acc + this.props.selected[curr].cost,
+        const total = Object.keys(this.props.total).reduce(
+            (acc, curr) => acc + this.props.total[curr].cost,
             0
         );
         return (
