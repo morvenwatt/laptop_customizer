@@ -9,7 +9,8 @@ class List extends Component {
             <div>
                 <ListSection 
                 features={this.props.features}
-                selected={this.props.selected}/>
+                selected={this.props.selected}
+                />
             </div>
         )
     }

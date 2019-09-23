@@ -5,12 +5,6 @@ const USCurrencyFormat = new Intl.NumberFormat('en-US', {
     currency: 'USD'
   });
 
-  //State is defined in App.js. No state is defined here. 
-  //props did not work. What does this need to pull from???
-  //Needs to know which items in cart are selected, which is set in main App
-  //this needs passed the data of selected items, so it can do this logic block
-
-
 
 class CartTotal extends Component {
     render () {

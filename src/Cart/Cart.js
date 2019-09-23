@@ -6,9 +6,6 @@ const USCurrencyFormat = new Intl.NumberFormat('en-US', {
     currency: 'USD'
   });
 
-  //Where is summary coming from? Why would this throw the error that
-  //undefined/null cannot be converted to an object?
-  //<CartTotal total={this.props.selected}/> WHERE DOES THIS GO?!?!?!?!
 
 class Cart extends Component {
     render() {

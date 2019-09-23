@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import List from './List/List';
 import Header from './Header/Header';
 import Cart from './Cart/Cart';
-//import CartTotal from './CartTotal/CartTotal';
 import './App.css';
 
 
@@ -30,40 +29,38 @@ class App extends Component {
     }
   };
 
-  //This must also remain in State, as it is needed by both List & Cart
-  updateFeature = (feature, newValue) => {
-    const selected = Object.assign({}, this.state.selected);
-    selected[feature] = newValue;
-    this.setState({
-      selected
-    });
-  };
+ 
 
 
-  //------ PULL OUT CODE FROM HERE DOWN ---- //
   
 
    render () {
     return (
       <div className="App">
+
         <Header />
+
         <main>
+
           <form className="main__form">
             <h2>Customize your laptop</h2>
             <List 
             features={this.props.features}
-            selected={this.state.selected}/>
+            selected={this.state.selected}
+            
+            />
           </form>
+
           <section className="main__summary">
             <h2>Your cart</h2>
           <Cart 
           summary={this.props.summary}
           selected={this.state.selected}
           />
-         
           </section>
-          
+
         </main>
+
       </div>
     );
   }
