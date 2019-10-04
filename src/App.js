@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './Header/Header';
-import MainList from './List/MainList';
+import SelectionForm from './List/SelectionForm';
 import MainCart from './Cart/MainCart';
 
 //MAIN APP
@@ -43,7 +43,7 @@ render () {
         <div className='App'>
             <Header />
             <main>
-                <MainList 
+            <SelectionForm 
                     features={this.props.features}
                     selected={this.state.selected}
                     handleUpdate={this.updateFeature} />

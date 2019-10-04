@@ -5,23 +5,19 @@ import ListSection from './ListSection';
 class MainList extends React.Component {
 
     render () {
-        const features = Object.keys(this.props.features)
-        .map (key =>
-            <ListSection
-                key={key}
-                name={key}
-                features={this.props.features[key]}
+        return (
+           <div className="feature" key={this.props.name}>
+               <div className='feature__name'>{this.props.name}</div>
+               <ListSection
+                name={this.props.name}
+                features={this.props.features}
                 handleUpdate={this.props.handleUpdate}
                 selected={this.props.selected}
                 />
-            )
-        return (
-            <section className='main__form'>
-                <h2>Customize your laptop</h2>
-                {features}
-            </section>
+            </div>
         )
     }
 }
 
 export default MainList;
+

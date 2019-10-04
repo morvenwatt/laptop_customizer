@@ -14,7 +14,7 @@ class CartTotal extends React.Component {
             <div className="summary__total__value">{new Intl.NumberFormat('en-US', {
                         style: 'currency',
                         currency: 'USD'
-                    }).format(this.props.cost)}</div>
+                    }).format(total)}</div>
         </div>
         )
     }
