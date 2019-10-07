@@ -21,7 +21,7 @@ class ListSection extends React.Component {
         });
 
     return (
-        <ul className='feature__list'>
+        <ul className='feature__item'>
         { itemFeatures }
         </ul>
         )

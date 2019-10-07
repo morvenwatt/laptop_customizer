@@ -5,11 +5,11 @@ class ListItem extends React.Component {
 
     render () {
 
-        const selectedClass = this.props.name === this.props.selected.name ? 'feature__selected' : '';
-        const featureClass = 'feature__option ' + selectedClass;
+        const selectedClass = this.props.name === this.props.selected.name ? "feature__selected" : ' ';
+        const featureClass = "feature__option " + selectedClass;
 
         return (
-            <li className="feature__item">
+            <li className="feature__label">
                 <div
                     className={featureClass}
                     onClick={e => this.props.handleUpdate(this.props.featureName, this.props.item)} >
